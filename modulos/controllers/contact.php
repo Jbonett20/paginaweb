@@ -52,12 +52,14 @@ try {
     ob_end_clean(); // Descartar cualquier salida no deseada
     
     // Validar y enviar solo el JSON
-    if(json_decode($jsonResponse) !== null) {
-        exit($jsonResponse);
-    } else {
+    if ($resultado['success']) {
+        echo json_encode($resultado);
+        exit;
+    }
+     else {
         exit(json_encode(['success'=>false, 'message'=>'Error interno']));
     }
-
+    
 } catch (Exception $e) {
     http_response_code(500);
     echo json_encode(['success' => false, 'message' => 'Error: '.$e->getMessage()]);

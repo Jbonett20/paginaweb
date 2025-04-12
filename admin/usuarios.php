@@ -22,6 +22,15 @@ session_start();
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <?php
+
+
+    if (!isset($_SESSION['usuarioId'])) {
+        header("Location: login.php");
+        exit();
+    }
+
+    ?>
 </head>
 
 <body id="page-top">
@@ -83,14 +92,14 @@ session_start();
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $_SESSION['nombre'] ?></span>
                                 <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                    src="img/undraw_profile_1.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
+                                <!--    <a class="dropdown-item" href="#">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
@@ -101,12 +110,13 @@ session_start();
                                 <a class="dropdown-item" href="#">
                                     <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Activity Log
-                                </a>
+                                </a> -->
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <a class="dropdown-item" id="btn_logout">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
+
                             </div>
                         </li>
 
@@ -114,29 +124,8 @@ session_start();
 
                 </nav>
                 <div class="container-fluid">
-                    <?php
-                    // Configuración de la base de datos
-                    $servername = "localhost";
-                    $username = "root";
-                    $password = "";
-                    $dbname = "gb_database";
-
-                    try {
-                        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-                        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                        
-                        // Consulta para obtener suscriptores
-                        $stmt = $conn->query("SELECT * FROM gb_suscriptores ORDER BY fecha_creacion DESC");
-                        $suscriptores = $stmt->fetchAll(PDO::FETCH_ASSOC);
-                    } catch(PDOException $e) {
-                        die("Error de conexión: " . $e->getMessage());
-                    }
-                    ?>
-
-                    <h2 class="my-4">Lista de Suscriptores</h2>
-                    
                     <div class="table-responsive">
-                        <table class="table table-striped table-hover">
+                        <table class="table table-striped table-hover" id="usuariosTable">
                             <thead class="thead-dark">
                                 <tr>
                                     <th>ID</th>
@@ -147,20 +136,9 @@ session_start();
                                     <th>Fecha de Registro</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <?php foreach ($suscriptores as $suscriptor): ?>
-                                <tr>
-                                    <td><?= htmlspecialchars($suscriptor['id']) ?></td>
-                                    <td><?= htmlspecialchars($suscriptor['nombre']) ?></td>
-                                    <td><?= htmlspecialchars($suscriptor['apellidos']) ?></td>
-                                    <td><?= htmlspecialchars($suscriptor['telefono']) ?></td>
-                                    <td><?= htmlspecialchars($suscriptor['email']) ?></td>
-                                    <td><?= htmlspecialchars($suscriptor['fecha_creacion']) ?></td>
-                                </tr>
-                                <?php endforeach; ?>
-                            </tbody>
                         </table>
                     </div>
+
                 </div>
 
             </div>
@@ -206,7 +184,8 @@ session_start();
         </div>
     </div>
     <?php include("script.php") ?>
-
+     <script src="js/usuarios.js"></script>
+     <script src="js/logout.js"></script>
 
 </body>
 
