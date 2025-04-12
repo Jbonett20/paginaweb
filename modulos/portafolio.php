@@ -1,149 +1,62 @@
-<section id="portfolio" class="portfolio section">
-
-<!-- Section Title -->
-<div class="container section-title" data-aos="fade-up">
-  <h2>Portfolio</h2>
-  <div><span>Consulte nuestro</span> <span class="description-title">Portfolio</span></div>
-</div><!-- End Section Title -->
-
-<div class="container">
-
-  <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-    <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-      <li data-filter="*" class="filter-active">Todo</li>
-      <li data-filter=".filter-app">Todo</li>
-      <li data-filter=".filter-product">Producto</li>
-      <li data-filter=".filter-branding">Branding</li>
-      <li data-filter=".filter-books">Libros</li>
-    </ul><!-- End Portfolio Filters -->
-
-    <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-        <div class="portfolio-content h-100">
-          <a href="assets/img/portfolio/app-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt=""></a>
-          <div class="portfolio-info">
-            <h4><a href="portfolio-details.html" title="More Details">App 2</a></h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-          </div>
-        </div>
-      </div><!-- End Portfolio Item -->
-
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-        <div class="portfolio-content h-100">
-          <a href="assets/img/portfolio/product-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt=""></a>
-          <div class="portfolio-info">
-            <h4><a href="portfolio-details.html" title="More Details">Product 1</a></h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-          </div>
-        </div>
-      </div><!-- End Portfolio Item -->
-
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-        <div class="portfolio-content h-100">
-          <a href="assets/img/portfolio/branding-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt=""></a>
-          <div class="portfolio-info">
-            <h4><a href="portfolio-details.html" title="More Details">Branding 1</a></h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-          </div>
-        </div>
-      </div><!-- End Portfolio Item -->
-
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-        <div class="portfolio-content h-100">
-          <a href="assets/img/portfolio/books-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt=""></a>
-          <div class="portfolio-info">
-            <h4><a href="portfolio-details.html" title="More Details">Books 1</a></h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-          </div>
-        </div>
-      </div><!-- End Portfolio Item -->
-
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-        <div class="portfolio-content h-100">
-          <a href="assets/img/portfolio/app-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt=""></a>
-          <div class="portfolio-info">
-            <h4><a href="portfolio-details.html" title="More Details">App 2</a></h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-          </div>
-        </div>
-      </div><!-- End Portfolio Item -->
-
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-        <div class="portfolio-content h-100">
-          <a href="assets/img/portfolio/product-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt=""></a>
-          <div class="portfolio-info">
-            <h4><a href="portfolio-details.html" title="More Details">Product 2</a></h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-          </div>
-        </div>
-      </div><!-- End Portfolio Item -->
-
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-        <div class="portfolio-content h-100">
-          <a href="assets/img/portfolio/branding-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt=""></a>
-          <div class="portfolio-info">
-            <h4><a href="portfolio-details.html" title="More Details">Branding 2</a></h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-          </div>
-        </div>
-      </div><!-- End Portfolio Item -->
-
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-        <div class="portfolio-content h-100">
-          <a href="assets/img/portfolio/books-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt=""></a>
-          <div class="portfolio-info">
-            <h4><a href="portfolio-details.html" title="More Details">Books 2</a></h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-          </div>
-        </div>
-      </div><!-- End Portfolio Item -->
-
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-        <div class="portfolio-content h-100">
-          <a href="assets/img/portfolio/app-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt=""></a>
-          <div class="portfolio-info">
-            <h4><a href="portfolio-details.html" title="More Details">App 3</a></h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-          </div>
-        </div>
-      </div><!-- End Portfolio Item -->
-
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-        <div class="portfolio-content h-100">
-          <a href="assets/img/portfolio/product-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt=""></a>
-          <div class="portfolio-info">
-            <h4><a href="portfolio-details.html" title="More Details">Product 3</a></h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-          </div>
-        </div>
-      </div><!-- End Portfolio Item -->
-
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-        <div class="portfolio-content h-100">
-          <a href="assets/img/portfolio/branding-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt=""></a>
-          <div class="portfolio-info">
-            <h4><a href="portfolio-details.html" title="More Details">Branding 3</a></h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-          </div>
-        </div>
-      </div><!-- End Portfolio Item -->
-
-      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-        <div class="portfolio-content h-100">
-          <a href="assets/img/portfolio/books-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt=""></a>
-          <div class="portfolio-info">
-            <h4><a href="portfolio-details.html" title="More Details">Books 3</a></h4>
-            <p>Lorem ipsum, dolor sit amet consectetur</p>
-          </div>
-        </div>
-      </div><!-- End Portfolio Item -->
-
-    </div><!-- End Portfolio Container -->
-
+<section id="portafolio" class="portfolio section light-background">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Nuestro trabajo</h2>
+    <div><span>Explora algunos de nuestros</span> <span class="description-title">casos y soluciones jurídicas</span></div>
   </div>
 
-</div>
+  <div class="container">
+    <div class="row gy-4">
 
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-img-top position-relative" style="height:200px; background-color:#f5f5f5;">
+            <!-- Imagen personalizada aquí -->
+            <img src="assets/img/portfolio/retiro.jpg" alt="Caso laboral" class="img-fluid h-100 w-100 object-fit-cover">
+            <!-- SVG decorativo opcional -->
+            <svg class="position-absolute bottom-0 start-0 w-100" height="40px" viewBox="0 0 500 150" preserveAspectRatio="none">
+              <path d="M0,0 C150,150 350,0 500,150 L500,00 L0,0 Z" style="stroke: none; fill: #602350;"></path>
+            </svg>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-dark">Negociación de retiro laboral</h5>
+            <p class="card-text">Diseñamos una estrategia legal para una terminación de contrato amistosa, cuidando los derechos del trabajador y la reputación de la empresa.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-img-top position-relative" style="height:200px; background-color:#f5f5f5;">
+            <img src="assets/img/portfolio/pensional.jpg" alt="Caso pensional" class="img-fluid h-100 w-100 object-fit-cover">
+            <svg class="position-absolute bottom-0 start-0 w-100" height="40px" viewBox="0 0 500 150" preserveAspectRatio="none">
+              <path d="M0,0 C150,150 350,0 500,150 L500,00 L0,0 Z" style="stroke: none; fill: #602350;"></path>
+            </svg>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-dark">Asesoría pensional estratégica</h5>
+            <p class="card-text">Ayudamos a un grupo de trabajadores a planificar su retiro con base en el impacto real de la reforma pensional y sus derechos adquiridos.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-img-top position-relative" style="height:200px; background-color:#f5f5f5;">
+            <img src="assets/img/portfolio/contrato.jpg" alt="Revisión de contrato" class="img-fluid h-100 w-100 object-fit-cover">
+            <svg class="position-absolute bottom-0 start-0 w-100" height="40px" viewBox="0 0 500 150" preserveAspectRatio="none">
+              <path d="M0,0 C150,150 350,0 500,150 L500,00 L0,0 Z" style="stroke: none; fill: #602350;"></path>
+            </svg>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-dark">Revisión contractual para startups</h5>
+            <p class="card-text">Acompañamos a una empresa emergente a estructurar sus acuerdos comerciales y laborales con enfoque preventivo y escalable.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>

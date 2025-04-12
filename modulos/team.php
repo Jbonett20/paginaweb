@@ -51,7 +51,7 @@ sindical..   </h3>
       <div class="member">
         <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
         <div class="member-info">
-          <div class="member-info-content">
+          <div class="member-info-content" style="color:#ffffff;">
             <h4>Claudia Marcela Gonzales</h4>
             <span>Socia Fundadora</span>
           </div>
@@ -69,7 +69,7 @@ sindical..   </h3>
       <div class="member">
         <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
         <div class="member-info">
-          <div class="member-info-content">
+          <div class="member-info-content" style="color:#ffffff;">
             <h4>Ana Paola Ballesteros</h4>
             <span>Socia Fundadora</span>
           </div>

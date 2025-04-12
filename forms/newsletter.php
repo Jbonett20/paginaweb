@@ -9,10 +9,10 @@ $dbname = "gb_database";
 header('Content-Type: application/json');
 
 // Recoger datos del formulario
-$nombre = $_POST['nombre'] ?? '';
-$apellidos = $_POST['apellidos'] ?? '';
-$telefono = $_POST['telefono'] ?? '';
-$email = $_POST['email'] ?? '';
+$nombre = $_POST['nombre'];
+$apellidos = $_POST['apellidos'];
+$telefono = $_POST['telefono'];
+$email = $_POST['email'];
 
 // Validar datos requeridos
 if (empty($nombre) || empty($apellidos) || empty($telefono) || empty($email)) {
@@ -43,7 +43,7 @@ try {
     // Ejecutar consulta
     $stmt->execute();
 
-    echo json_encode(['status' => 'success', 'message' => 'Suscripción registrada correctamente']);
+    exit(json_encode(['status' => 'success', 'message' => 'Suscripción registrada correctamente']));
 
 } catch(PDOException $e) {
     if ($e->getCode() == 23000) { // Error de duplicado (email único)

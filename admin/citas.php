@@ -19,7 +19,15 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <?php
 
+    session_start();
+    if (!isset($_SESSION['usuarioId'])) {
+        header("Location: login.php");
+        exit();
+    }
+
+    ?>
 </head>
 
 <body id="page-top">
@@ -28,7 +36,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-   <?php include("nav.php") ?>
+        <?php include("nav.php") ?>
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -72,23 +80,23 @@
                             </div>
                         </li>
 
-        
-                    
+
+
 
                         <div class="topbar-divider d-none d-sm-block"></div>
 
-                        <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown no-arrow">
+                          <!-- Nav Item - User Information -->
+                          <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $_SESSION['nombre'] ?></span>
                                 <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                    src="img/undraw_profile_1.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
+                                <!--    <a class="dropdown-item" href="#">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
@@ -99,12 +107,13 @@
                                 <a class="dropdown-item" href="#">
                                     <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Activity Log
-                                </a>
+                                </a> -->
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <a class="dropdown-item" id="btn_logout">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
+
                             </div>
                         </li>
 
@@ -112,59 +121,33 @@
 
                 </nav>
                 <div class="container-fluid">
-                    <?php
-                    // Incluir conexión a BD
-                    require_once("../config/db.php");
-                    
-                    try {
-                        // Consulta para obtener contactos
-                        $query = "SELECT * FROM contactos ORDER BY fecha_creacion DESC";
-                        $stmt = $pdo->prepare($query);
-                        $stmt->execute();
-                        $contactos = $stmt->fetchAll(PDO::FETCH_ASSOC);
-                        
-                        if(count($contactos) > 0): ?>
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Lista de Contactos</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                            <thead>
-                                                <tr>
-                                                    <th>Nombre</th>
-                                                    <th>Email</th>
-                                                    <th>Asunto</th>
-                                                    <th>Mensaje</th>
-                                                    <th>Fecha</th>
-                                                    <th>Estado</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <?php foreach($contactos as $contacto): ?>
-                                                <tr>
-                                                    <td><?= htmlspecialchars($contacto['nombre']) ?></td>
-                                                    <td><?= htmlspecialchars($contacto['email']) ?></td>
-                                                    <td><?= htmlspecialchars($contacto['asunto']) ?></td>
-                                                    <td><?= htmlspecialchars($contacto['mensaje']) ?></td>
-                                                    <td><?= htmlspecialchars($contacto['fecha_creacion']) ?></td>
-                                                    <td><?= htmlspecialchars($contacto['estado'] ?? '1') ?></td>
-                                                </tr>
-                                                <?php endforeach; ?>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
+                    <div class="card shadow-lg mb-4">
+                        <div class="card-header bg-primary text-white py-3">
+                            <h6 class="m-0 font-weight-bold">Lista de Citas</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="dataTable" class="table table-bordered table-hover table-striped" width="100%">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>Email</th>
+                                            <th>Asunto</th>
+                                            <th>Mensaje</th>
+                                            <th>Fecha</th>
+                                            <th>Estado</th>
+                                            <th>Atender</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- DataTables cargará los datos aquí -->
+                                    </tbody>
+                                </table>
                             </div>
-                        <?php else: ?>
-                            <div class="alert alert-info">No hay contactos registrados</div>
-                        <?php endif;
-                        
-                    } catch(PDOException $e) {
-                        echo '<div class="alert alert-danger">Error al cargar los contactos: '.htmlspecialchars($e->getMessage()).'</div>';
-                    }
-                    ?>
+                        </div>
+                    </div>
+
+
                 </div>
 
             </div>
@@ -209,65 +192,67 @@
             </div>
         </div>
     </div>
-<?php include("script.php") ?>
+    <?php include("script.php") ?>
 
-<!-- Modal de Suscripción -->
-<div class="modal fade" id="suscripcionModal" tabindex="-1" role="dialog" aria-labelledby="suscripcionModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="suscripcionModalLabel">Formulario de Suscripción</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form id="formSuscripcion">
-                    <div class="form-group">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="apellidos">Apellidos</label>
-                        <input type="text" class="form-control" id="apellidos" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="telefono">Teléfono</label>
-                        <input type="tel" class="form-control" id="telefono" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="correo">Correo Electrónico</label>
-                        <input type="email" class="form-control" id="correo" required>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary" id="btnEnviarSuscripcion">Suscribirse</button>
+    <!-- Modal de Suscripción -->
+    <div class="modal fade" id="suscripcionModal" tabindex="-1" role="dialog" aria-labelledby="suscripcionModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="suscripcionModalLabel">Formulario de Suscripción</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="formSuscripcion">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="apellidos">Apellidos</label>
+                            <input type="text" class="form-control" id="apellidos" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="correo" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" id="btnEnviarSuscripcion">Suscribirse</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="js/citas.js"></script>
+    <script src="js/logout.js"></script>
+    <script>
+        // Mostrar modal al hacer clic en Suscribirse
+        document.addEventListener('DOMContentLoaded', function() {
+            const suscribirseBtn = document.querySelector('footer a[href="#"]');
+            if (suscribirseBtn) {
+                suscribirseBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    $('#suscripcionModal').modal('show');
+                });
+            }
 
-<script>
-// Mostrar modal al hacer clic en Suscribirse
-document.addEventListener('DOMContentLoaded', function() {
-    const suscribirseBtn = document.querySelector('footer a[href="#"]');
-    if(suscribirseBtn) {
-        suscribirseBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            $('#suscripcionModal').modal('show');
+            // Lógica para enviar el formulario
+            document.getElementById('btnEnviarSuscripcion').addEventListener('click', function() {
+                // Aquí iría la lógica para enviar los datos
+                alert('Formulario enviado correctamente');
+                $('#suscripcionModal').modal('hide');
+            });
         });
-    }
-    
-    // Lógica para enviar el formulario
-    document.getElementById('btnEnviarSuscripcion').addEventListener('click', function() {
-        // Aquí iría la lógica para enviar los datos
-        alert('Formulario enviado correctamente');
-        $('#suscripcionModal').modal('hide');
-    });
-});
-</script>
+    </script>
 
 </body>
 
