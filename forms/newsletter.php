@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "gb_database";
+$dbname = "u436126506_gb_database";
 
 // Establecer cabeceras para respuesta JSON
 header('Content-Type: application/json');
