@@ -122,7 +122,7 @@
                 </nav>
                 <div class="container-fluid">
                     <div class="card shadow-lg mb-4">
-                        <div class="card-header bg-primary text-white py-3">
+                        <div class="card-header text-white py-3" style="background-color:#602350!important;">
                             <h6 class="m-0 font-weight-bold">Lista de Citas</h6>
                         </div>
                         <div class="card-body">

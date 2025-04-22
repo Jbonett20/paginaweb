@@ -8,7 +8,7 @@
   <div class="container">
     <div class="row gy-4">
 
-      <h1 class="mb-4">Ser líderes en el ámbito legal por innovación y adaptabilidad</h1>
+      <h2 class="mb-4 section-title">Ser líderes en el ámbito legal por innovación y adaptabilidad</h2>
 
       <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
         <h4><i class="bi bi-lightbulb-fill text-warning me-2"></i>Propósito de Liderazgo Legal</h4>

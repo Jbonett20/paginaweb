@@ -1,16 +1,14 @@
-<section id="services" class="services section">
-
+<section class="services section">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Servicios</h2>
-        <div><span>Recuperación de Cartera Efectiva</span> <span class="description-title">Servicios</span></div>
+        <div><span>Recuperación de Cartera Efectiva</span></div>
       </div><!-- End Section Title -->
 
       <div class="container">
 
         <div class="row gy-4">
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item  position-relative">
               <div class="icon">
                 <i class="bi bi-activity"></i>
@@ -23,7 +21,7 @@
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
               <div class="icon">
                 <i class="bi bi-broadcast"></i>
@@ -36,7 +34,7 @@
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
               <div class="icon">
                 <i class="bi bi-easel"></i>
@@ -48,7 +46,7 @@
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
               <div class="icon">
                 <i class="bi bi-bounding-box-circles"></i>
@@ -59,33 +57,7 @@
               <p>Estamos aquí para ayudar a nuestros clientes a enfrentar desafíos legales, ofreciéndoles la asesoría que necesitan en cada momento.</p>
               <a href="service-details.html" class="stretched-link"></a>
             </div>
-          </div><!-- End Service Item -->
-<!--
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
-              </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Él quiere dolor.</h3>
-              </a>
-              <p>Y con eso, a menudo recibe. Es fácil ser el propio cuerpo o los mayores. Pero la mente, sin embargo, es otra cosa: su trabajo.</p>
-              <a href="service-details.html" class="stretched-link"></a>
-            </div>
-          </div> End Service Item -->
-<!--
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <a href="service-details.html" class="stretched-link">
-                <h3>Arquitecto del dolor</h3>
-              </a>
-              <p>Aquí, a algunos de ellos les preocupa. Porque puede huir del dolor, o bien no, o bien no debe, y debe derecho. Porque conducimos al rechazo de lo corrupto.</p>
-              <a href="service-details.html" class="stretched-link"></a>
-            </div>
-          </div> End Service Item -->
+          </div>
 
         </div>
 
