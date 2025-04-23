@@ -1,10 +1,6 @@
 <section class="testimonials section bg-white py-5">
   <div class="container section-title text-center" data-aos="fade-up">
     <div><span style="color: #602350;">Testimonios de Clientes</span></div>
-    <p class="mt-2">Algunos de nuestros clientes: <strong>PERCOSFAR LTDA</strong> (Perfumería Cosméticos y Farmacéuticos Limitada), 
-      <strong>INFARVET S.A.S</strong> (Inversiones Farmacéuticas y Veterinarias), 
-      <strong>MBH S.A.S</strong> (Motores Bombas y Herramientas MG S.A.S).
-    </p>
   </div>
 
   <div class="container">
