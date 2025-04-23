@@ -1,11 +1,11 @@
 <section id="casos" class="py-5">
   <div class="container">
-    <div class="row mb-5 text-center">
-      <div class="col-12" data-aos="fade-up">
-        <h2 class="fw-bold">CASOS DESTACADOS</h2>
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>CASOS DESTACADOS</h2><br>
         <p class="text-muted">Conoce algunos de los casos donde hemos hecho la diferencia.</p>
-      </div>
-    </div>
+      </div><!-- End Section Title -->
+
 
     <div class="row g-4">
       <!-- Tarjeta 1 -->

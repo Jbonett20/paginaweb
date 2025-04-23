@@ -17,11 +17,10 @@
 <section id="faq" class="faq section bg-light py-5">
   <div class="container">
 
-    <!-- Section Title -->
-    <div class="text-center mb-5" data-aos="fade-up">
-      <h2 class="fw-bold">Preguntas frecuentes</h2>
-      <p class="text-muted">Asesoría clara, respuestas concretas</p>
-    </div>
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Preguntas frecuentes</h2><br>
+        <div><span>Asesoría clara, respuestas concretas </span></div>
+      </div><!-- End Section Title -->
 
     <!-- Accordion -->
     <div class="accordion" id="faqAccordion">

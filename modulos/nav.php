@@ -4,7 +4,7 @@
           <li><a href="#about">Acerca de</a></li>
           <li><a href="#services">Servicios</a></li>
           <li><a href="#testimonials">Testimonios</a></li>
-          <li><a href="#portafolio">Portafolio</a></li>
+          <li><a href="#casos">Portafolio</a></li>
           <li><a href="#team">Equipo</a></li>
           <!--<li class="dropdown"><a href="#"><span>Menú desplegable</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
