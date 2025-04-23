@@ -12,3 +12,21 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+  const img = document.querySelector('.img_logo');
+  const zoomPreview = document.getElementById('zoom-preview');
+
+  img.addEventListener('mouseover', (e) => {
+    zoomPreview.style.display = 'block';
+  });
+
+  img.addEventListener('mousemove', (e) => {
+    zoomPreview.style.top = (e.pageY + 20) + 'px';
+    zoomPreview.style.left = (e.pageX + 20) + 'px';
+  });
+
+  img.addEventListener('mouseout', () => {
+    zoomPreview.style.display = 'none';
+  });
+</script>
+

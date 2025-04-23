@@ -1,135 +1,48 @@
-<section id="testimonials" class="testimonials section light-background">
-
-<!-- Section Title 
+<section class="testimonials section bg-white" id="testimonials">
+  <div class="container section-title text-aligh" data-aos="fade-up">
+ <h2>Testimonios de Clientes</h2>
+  </div>
+<!-- Section Title -->
 <div class="container section-title" data-aos="fade-up">
-  <h2>Testimonials</h2>
-  <div><span>Check Our</span> <span class="description-title">Testimonials</span></div>
-</div>
 
-<div class="container" data-aos="fade-up" data-aos-delay="100">
+<p class="mt-2">Empresas que han confiado en nosotros para proteger sus intereses legales.</p>
+      </div><!-- End Section Title -->
+  <div class="container">
+    <div class="row gy-4 justify-content-center">
 
-  <div class="swiper init-swiper">
-    <script type="application/json" class="swiper-config">
-      {
-        "loop": true,
-        "speed": 600,
-        "autoplay": {
-          "delay": 5000
-        },
-        "slidesPerView": "auto",
-        "pagination": {
-          "el": ".swiper-pagination",
-          "type": "bullets",
-          "clickable": true
-        },
-        "breakpoints": {
-          "320": {
-            "slidesPerView": 1,
-            "spaceBetween": 40
-          },
-          "1200": {
-            "slidesPerView": 2,
-            "spaceBetween": 20
-          }
-        }
-      }
-    </script>
-    <div class="swiper-wrapper">
-
-      <div class="swiper-slide">
-        <div class="testimonial-wrap">
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-            <div class="stars">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </div>
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
+      <!-- Testimonio 1 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="testimonial-item p-4 shadow-sm rounded-4" style="border: 2px solid #602350;">
+          <div class="stars mb-2 text-warning">
+            ★★★★★
           </div>
+          <h5 class="text-dark">PERCOSFAR LTDA</h5>
+          <p class="text-muted fst-italic">“Gracias a su acompañamiento legal, hemos logrado optimizar procesos laborales y mantener una gestión jurídica eficiente. Un equipo confiable y profesional.”</p>
         </div>
       </div>
 
-      <div class="swiper-slide">
-        <div class="testimonial-wrap">
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-            <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
-            <div class="stars">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </div>
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
+      <!-- Testimonio 2 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="testimonial-item p-4 shadow-sm rounded-4" style="border: 2px solid #602350;">
+          <div class="stars mb-2 text-warning">
+            ★★★★★
           </div>
+          <h5 class="text-dark">INFARVET S.A.S</h5>
+          <p class="text-muted fst-italic">“Su asesoría ha sido clave en la resolución de situaciones legales complejas. Recomendamos sus servicios sin dudarlo.”</p>
         </div>
       </div>
 
-      <div class="swiper-slide">
-        <div class="testimonial-wrap">
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-            <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
-            <div class="stars">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </div>
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
+      <!-- Testimonio 3 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="testimonial-item p-3 shadow-sm rounded-4" style="border: 2px solid #602350;">
+          <div class="stars mb-2 text-warning">
+            ★★★★★
           </div>
-        </div>
-      </div>
-
-      <div class="swiper-slide">
-        <div class="testimonial-wrap">
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-            <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
-            <div class="stars">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </div>
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="swiper-slide">
-        <div class="testimonial-wrap">
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-            <div class="stars">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </div>
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-          </div>
+          <h5 class="text-dark">MBH S.A.S (Motores Bombas y Herramientas MG S.A.S)</h5>
+          <p class="text-muted fst-italic">“Hemos recibido acompañamiento estratégico y cercano en temas laborales y comerciales. Un servicio jurídico con enfoque humano y resultados.”</p>
         </div>
       </div>
 
     </div>
-    <div class="swiper-pagination"></div>
   </div>
-
-</div>
-
-</section>-->
+</section>

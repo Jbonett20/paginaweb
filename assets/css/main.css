@@ -74,6 +74,14 @@
     color: var(--heading-color);
     font-family: var(--heading-font);
   }
+  .img_logo {
+    border-radius: 2px;
+    width: 100%;
+  }
+  
+  #zoom-preview {
+    pointer-events: none; /* para que no interfiera con el mouse */
+  }
   
   /* PHP Email Form Messages
   ------------------------------*/
