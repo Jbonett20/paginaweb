@@ -1,8 +1,8 @@
 <?php
 // Configuración de la base de datos
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "u436126506_gb_consultores";
+$password = "gb*2025#&Consultores";
 $dbname = "u436126506_gb_database";
 
 // Establecer cabeceras para respuesta JSON
