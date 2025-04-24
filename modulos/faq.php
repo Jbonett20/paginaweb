@@ -18,7 +18,7 @@
   <div class="container">
 
     <div class="container section-title" data-aos="fade-up">
-        <h2>Preguntas frecuentes</h2><br>
+        <h2 style="letter-spacing:0 !important;">Preguntas frecuentes</h2><br>
         <div><span>Asesoría clara, respuestas concretas </span></div>
       </div><!-- End Section Title -->
 
