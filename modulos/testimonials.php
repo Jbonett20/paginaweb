@@ -1,6 +1,6 @@
 <section class="testimonials section bg-white py-5" id="testimonials">
   <div class="container section-title text-align" data-aos="fade-up">
-    <h2 style="letter-spacing:0 !important;">Testimonios de Clientes</h2>
+    <h2 style="letter-spacing:0 !important;">Algunos de nuestros clientes</h2>
 
   <div class="container">
     <div class="row gy-4 justify-content-center">
