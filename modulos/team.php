@@ -28,7 +28,7 @@
             <div class="social mt-2">
               <!-- <a href="#"><i class="bi bi-twitter-x"></i></a>
               <a href="#"><i class="bi bi-facebook"></i></a> -->
-              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.instagram.com/gonzalezyballesteros_abogados/?igsh=MWw2eTFtbXMzc2k%3D-271%2C15#"><i class="bi bi-instagram"></i></a>
               <a href="https://www.linkedin.com/in/claudia-marcela-gonzalez-martinez-558549121?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
@@ -47,8 +47,8 @@
             <div class="social mt-2">
              <!--  <a href="#"><i class="bi bi-twitter-x"></i></a>
               <a href="#"><i class="bi bi-facebook"></i></a> -->
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.instagram.com/gonzalezyballesteros_abogados/?igsh=MWw2eTFtbXMzc2k%3D-271%2C15#"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/ana-paola-ballesteros-monterroza-35a336248/?original_referer="><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
         </div>
