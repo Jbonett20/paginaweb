@@ -1,11 +1,11 @@
 <section id="services" class="features section py-5">
-  
+
   <div class="container">
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-        <h2>Servicios</h2><br>
-        <div><span>Nuestras áreas </span></div>
-      </div><!-- End Section Title -->
+      <h2>Servicios</h2><br>
+      <div><span>Nuestras áreas </span></div>
+    </div><!-- End Section Title -->
 
     <div class="row gy-4">
       <!-- Card 1 -->
@@ -55,11 +55,13 @@
         <div class="card h-100 shadow-sm border-0">
           <div class="card-body">
             <h5 class="card-title text-dark fw-bold">
-              <i class="bi bi-check-circle-fill text-success me-2"></i>DERECHO CIVIL Y COMERCIAL
+              <i class="bi bi-check-circle-fill text-success me-2"></i>DERECHO CIVIL, FAMILIA Y COMERCIAL
             </h5>
             <p class="card-text" style="text-align: justify;">
-              Ofrecemos acompañamiento en contratación comercial con un enfoque empresarial, asegurando el cumplimiento normativo corporativo, la representación legal, la elaboración de actas de comité y juntas directivas, así como la implementación de buenas prácticas de gobierno corporativo.
+              Ofrecemos acompañamiento en contratación comercial con un enfoque empresarial, asegurando el cumplimiento normativo corporativo, la representación legal, la elaboración de actas de comité y juntas directivas, así como la implementación de buenas prácticas de gobierno corporativo. <br>
+              Adicionalmente, te acompañamos en los trámites familiares de sucesiones y divorcios.
             </p>
+
           </div>
         </div>
       </div>
