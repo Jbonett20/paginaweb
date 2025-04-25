@@ -9,7 +9,7 @@
         <div class="footer-contact pt-3">
           <p>Bogotá y Barranquilla</p>
           <p>Atención virtual o presencial</p>
-          <p class="mt-3"><strong>Teléfono:</strong> <span>3017543649 - 3188517817</span></p>
+          <p class="mt-3"><strong>Teléfono:</strong> <span>3188517817 - 3017543649</span></p>
           <p><strong>Correo electrónico:</strong> <span>gerencia@gonzalezballesteros.com</span></p>
         </div>
 

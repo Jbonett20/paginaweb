@@ -4,7 +4,7 @@
 
     <!-- Slide 1 -->
     <div class="carousel-item active">
-      <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
+      <img src="assets/img/hero-carousel/hero1.jpg" alt="">
       <div class="carousel-container">
         <h2>¿Quiénes somos?</h2>
         <p>Somos una firma de abogados especializada en derecho laboral y civil, dedicada a la asesoría y consultoría integral. Nuestra experiencia está respaldada por años de trabajo con empresas y firmas de abogados, lo que nos permite ofrecer soluciones jurídicas efectivas y personalizadas.</p>
@@ -24,7 +24,7 @@
 
     <!-- Slide 3 -->
     <div class="carousel-item">
-      <img src="assets/img/hero-carousel/hero1.jpg" alt="">
+      <img src="assets/img/hero-carousel/hero3.jpg" alt="">
       <div class="carousel-container">
         <h2>Tu tranquilidad legal, nuestro compromiso</h2>
         <p>Estamos preparados para orientarte en decisiones claves de tu empresa. Diseñamos estrategias jurídicas que se adaptan a tus necesidades.</p>
