@@ -22,7 +22,7 @@
           <img src="assets/img/team/team-3.png" class="img-fluid rounded" alt="Claudia Marcela Gonzales">
           <div class="member-info mt-3">
             <div class="member-info-content text-white">
-              <h4>Claudia Marcela Gonzales</h4>
+              <h4>Claudia Marcela Gonzalez</h4>
               <span>Socia Fundadora</span>
             </div>
             <div class="social mt-2">

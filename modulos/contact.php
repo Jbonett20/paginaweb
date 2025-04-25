@@ -25,7 +25,7 @@
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-telephone" style="background-color: #602350 !important;color:#ffffff;"></i>
               <h3>Llámanos</h3>
-              <p>3017543649 - 3188517817</p>
+              <p>3188517817 - 3017543649</p>
             </div>
           </div><!-- End Info Item -->
 
