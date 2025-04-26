@@ -2,9 +2,8 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <div  class="logo d-flex align-items-center me-auto"> 
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <img src="assets/img/Logo1.png" class="img-fluid img_logo" style="border-radius: 2px; width:100%;" alt="">
+        <img src="assets/img/Logo1.png" alt="Logo G&B" class="img-fluid img_logo" style="max-width: 180px; border-radius: 2px;">
+
         </div>
 
       <?php include_once("./modulos/nav.php") ?>
