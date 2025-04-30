@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>G&B - Consultores y Asociados</title>
+  <title>González & Ballesteros - Consultores y Asociados | Derecho Laboral, Civil y Seguridad Social</title>
 
   <meta name="description" content="Somos una firma de abogados especializada en derecho laboral, civil y comercial. Ofrecemos asesoría integral a empresas y particulares en gestión de personal, litigios, contratos, pensiones y gobierno corporativo. Más de 20 años de experiencia legal estratégica a su servicio." />
   <meta name="keywords" content="derecho laboral, derecho civil, derecho comercial, abogados laboralistas, abogados civilistas, asesoría legal, litigios laborales, contratos comerciales, reforma pensional, gestión sindical, consultoría legal, Gonzáles y Ballesteros" />

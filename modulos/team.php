@@ -48,7 +48,7 @@
              <!--  <a href="#"><i class="bi bi-twitter-x"></i></a>
               <a href="#"><i class="bi bi-facebook"></i></a> -->
               <a href="https://www.instagram.com/gonzalezyballesteros_abogados/?igsh=MWw2eTFtbXMzc2k%3D-271%2C15#"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/ana-paola-ballesteros-monterroza-35a336248/?original_referer="><i class="bi bi-linkedin"></i></a>
+              <a href=" https://www.linkedin.com/in/ana-paola-ballesteros-42b32a68/"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
         </div>
