@@ -28,6 +28,21 @@
     }
 
     ?>
+    <style>
+        td.wrap-text {
+            white-space: normal !important;
+            /* Permite saltos de línea */
+            max-width: 200px;
+            /* Ajusta este ancho como necesites */
+            word-wrap: break-word;
+            /* Rompe palabras largas */
+        }
+
+        table#dataTable {
+            table-layout: fixed;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body id="page-top">
@@ -85,8 +100,8 @@
 
                         <div class="topbar-divider d-none d-sm-block"></div>
 
-                          <!-- Nav Item - User Information -->
-                          <li class="nav-item dropdown no-arrow">
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $_SESSION['nombre'] ?></span>

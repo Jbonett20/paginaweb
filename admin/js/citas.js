@@ -10,10 +10,10 @@ function listarCitas() {
             dataSrc: ''
         },
         columns: [
-            { data: 'nombre' },
-            { data: 'email' },
-            { data: 'asunto' },
-            { data: 'mensaje' },
+            { data: 'nombre',className: 'wrap-text'  },
+            { data: 'email',className: 'wrap-text'  },
+            { data: 'asunto', className: 'wrap-text' },
+            { data: 'mensaje',className: 'wrap-text'  },
             { data: 'fecha_creacion' },
             {
                 data: 'estado',
